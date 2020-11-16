@@ -1,0 +1,10 @@
+GUI(Graphic User Interface(조작)): 어플리케이션을 그림을 개발 / 윈도우 프로그램 
+awt: 자바의 기본 그래픽 처리 APO(그래픽,이벤트 관련 각종객체,메서드 지원 )
+swing < javaFX
+java se (윈도우 프로그래밍)
+java ee - 최대강점(웹분야-대형 웹기반 어플리케이션)
+java me - 스마트폰 개발을 가능하나, 안드로이드가 더 뛰어남 oracle vs google 
+
+API Document가 필요한 이요? 
+내가 만든 클래스 말고 다른 사람이 만든 클래스의 속성, 메서드는 우리가 알 수 없다. 
+따라서 클래스를 만드는자는 사용하려는 자에게 객체에 대한 사용설명서(API Document)를 javadoc.exe 

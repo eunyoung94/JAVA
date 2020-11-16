@@ -1,0 +1,42 @@
+package day1030.album;
+
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+/**
+ * @author choieunyoung
+ *
+ */
+public class XCanvas extends Canvas{
+	private Toolkit kit=Toolkit.getDefaultToolkit();
+	private Image img;
+	private String src;
+	
+	public XCanvas(String src) {
+		img=kit.getImage(src);
+		img=img.getScaledInstance(660, 450, Image.SCALE_SMOOTH);
+		setPreferredSize(new Dimension(660,450));
+		setBackground(Color.GRAY);
+	}
+
+	public String getSrc() {
+		return src;
+	}
+
+	public void setSrc(String src) {
+		//이미지를 얻어와서 스케일조절해하고 출력
+		img=kit.getImage(src);
+		img=img.getScaledInstance(660, 450, Image.SCALE_SMOOTH);
+		this.src = src;
+	}
+
+	@Override
+	public void paint(Graphics g) {
+		g.drawImage(img, 0, 0, this);
+	}
+	
+}
